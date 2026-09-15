@@ -1,0 +1,6 @@
+[+] Parsed alerts: 44112
+[+] Malformed EVE lines: 0
+[+] Rule matches: {'unknown_sid': 44097, 'sid_fallback': 15}
+[+] JSONL output: runs\paper_extension\external\santos\scores.jsonl
+[+] CSV output: runs\paper_extension\external\santos\scores.csv
+[+] Summary output: runs\paper_extension\external\santos\score_summary.json

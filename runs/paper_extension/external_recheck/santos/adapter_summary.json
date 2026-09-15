@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "adapter": "ait_ads_wazuh_to_eve",
+  "scenario": "santos",
+  "input": "..\\ait_data\\santos_wazuh.json",
+  "output": "runs\\paper_extension\\external_recheck\\santos\\eve.json",
+  "labels_csv": "..\\ait_labels\\santos_alerts.txt",
+  "diagnostics": {
+    "total_records": 126513,
+    "malformed_json": 0,
+    "suricata_records": 44112,
+    "non_suricata_records": 82401,
+    "missing_sid": 0
+  },
+  "limitations": [
+    "AIT-ADS Wazuh exports may omit raw EVE flow_id, tx_id, HTTP outcome, and payload fields.",
+    "The adapter preserves missing evidence and does not infer attack ground truth.",
+    "Time-phase labels were joined by whole-second timestamp and normalized signature."
+  ]
+}

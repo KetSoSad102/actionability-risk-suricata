@@ -1,0 +1,88 @@
+{
+  "module": "as_engine.experiment",
+  "arguments": [
+    "--eve",
+    "logs/suricata/eve.json",
+    "--rules",
+    "rules/rule_metadata.yaml",
+    "--scoring",
+    "config/scoring-v2.yaml",
+    "--profile",
+    "proposed_default",
+    "--output-dir",
+    "runs\\paper_extension\\controlled_cost\\generated",
+    "--no-figures"
+  ],
+  "runs": [
+    {
+      "module_wall_seconds": 1.4977783999999872,
+      "cpu_seconds": 1.296875,
+      "peak_rss_mib": 33.08203125,
+      "process_wall_seconds": 1.6768606999999918,
+      "repetition": 0,
+      "warmup": true
+    },
+    {
+      "module_wall_seconds": 1.067295200000018,
+      "cpu_seconds": 1.046875,
+      "peak_rss_mib": 32.828125,
+      "process_wall_seconds": 2.3733925999999883,
+      "repetition": 1,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.0748969999999929,
+      "cpu_seconds": 1.078125,
+      "peak_rss_mib": 32.8125,
+      "process_wall_seconds": 1.2608339999999885,
+      "repetition": 2,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.1414094000000148,
+      "cpu_seconds": 1.109375,
+      "peak_rss_mib": 32.734375,
+      "process_wall_seconds": 1.3213241999999923,
+      "repetition": 3,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.095590900000019,
+      "cpu_seconds": 1.09375,
+      "peak_rss_mib": 32.79296875,
+      "process_wall_seconds": 1.273946599999988,
+      "repetition": 4,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.1348991000000126,
+      "cpu_seconds": 1.125,
+      "peak_rss_mib": 33.00390625,
+      "process_wall_seconds": 1.3006329999999764,
+      "repetition": 5,
+      "warmup": false
+    }
+  ],
+  "repeats": 5,
+  "warmups": 1,
+  "process_wall_seconds": {
+    "median": 1.3006329999999764,
+    "minimum": 1.2608339999999885,
+    "maximum": 2.3733925999999883
+  },
+  "module_wall_seconds": {
+    "median": 1.095590900000019,
+    "minimum": 1.067295200000018,
+    "maximum": 1.1414094000000148
+  },
+  "cpu_seconds": {
+    "median": 1.09375,
+    "minimum": 1.046875,
+    "maximum": 1.125
+  },
+  "peak_rss_mib": {
+    "median": 32.8125,
+    "minimum": 32.734375,
+    "maximum": 33.00390625
+  }
+}

@@ -1,0 +1,7 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements-experiments.txt /app/requirements-experiments.txt
+RUN pip install --no-cache-dir -r requirements-experiments.txt
+COPY src /app/src
+ENV PYTHONPATH=/app/src
+CMD ["python", "-m", "as_engine.experiment", "--eve", "/logs/suricata/eve.json", "--rules", "/app/rules/rule_metadata.yaml", "--scoring", "/app/config/scoring-v2.yaml", "--variants", "/app/config/controlled_variants.yaml", "--contexts", "/app/config/context_variants.yaml", "--output-dir", "/app/runs/experiments/controlled"]

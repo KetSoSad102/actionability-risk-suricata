@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "adapter": "ait_ads_wazuh_to_eve",
+  "scenario": "shaw",
+  "input": "..\\ait_data\\shaw_wazuh.json",
+  "output": "runs\\paper_extension\\external_recheck\\shaw\\eve.json",
+  "labels_csv": "..\\ait_labels\\shaw_alerts.txt",
+  "diagnostics": {
+    "total_records": 68539,
+    "malformed_json": 0,
+    "suricata_records": 16692,
+    "non_suricata_records": 51847,
+    "missing_sid": 0
+  },
+  "limitations": [
+    "AIT-ADS Wazuh exports may omit raw EVE flow_id, tx_id, HTTP outcome, and payload fields.",
+    "The adapter preserves missing evidence and does not infer attack ground truth.",
+    "Time-phase labels were joined by whole-second timestamp and normalized signature."
+  ]
+}

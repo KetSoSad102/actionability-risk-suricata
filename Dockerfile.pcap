@@ -1,0 +1,6 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements-pcap.txt /app/requirements-pcap.txt
+RUN pip install --no-cache-dir -r requirements-pcap.txt
+COPY payloads /app/payloads
+CMD ["python", "/app/payloads/generate_official_payloads_pcap.py", "--output", "/app/pcaps/generated_official_payloads.pcap"]

@@ -1,0 +1,6 @@
+[+] Parsed alerts: 9186
+[+] Malformed EVE lines: 0
+[+] Rule matches: {'unknown_sid': 9159, 'sid_fallback': 27}
+[+] JSONL output: runs\paper_extension\external_recheck\russellmitchell\scores.jsonl
+[+] CSV output: runs\paper_extension\external_recheck\russellmitchell\scores.csv
+[+] Summary output: runs\paper_extension\external_recheck\russellmitchell\score_summary.json

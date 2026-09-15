@@ -1,0 +1,6 @@
+context,label,case_count,actionability_mean,actionability_std,actionability_min,actionability_max,risk_mean,outcomes
+observed,Observed HTTP 200,100,0.74,0.232731,0.105,0.94,0.639,"{""possibly_successful"": 70, ""unknown"": 30}"
+success_marker_200,HTTP 200 with success marker,100,0.775,0.253966,0.105,1.0,0.699,"{""possibly_successful"": 20, ""success_evidenced"": 50, ""unknown"": 30}"
+failure_marker_200,HTTP 200 with failure marker,100,0.775,0.253966,0.105,1.0,0.539,"{""failure_evidenced"": 50, ""possibly_successful"": 20, ""unknown"": 30}"
+rejected_403,Rejected HTTP 403,100,0.787,0.255333,0.105,1.0,0.499,"{""failure_evidenced"": 70, ""unknown"": 30}"
+ambiguous_302,Ambiguous HTTP 302,100,0.724,0.226611,0.105,0.91,0.583,"{""unknown"": 100}"

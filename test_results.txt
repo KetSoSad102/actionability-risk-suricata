@@ -1,0 +1,26 @@
+test_wazuh_embedded_suricata_records_are_converted_without_fabrication (test_ait_ads.AitAdsAdapterTests.test_wazuh_embedded_suricata_records_are_converted_without_fabrication) ... ok
+test_balanced_sample_is_deterministic_and_score_blind (test_annotation.AnnotationSamplingTests.test_balanced_sample_is_deterministic_and_score_blind) ... ok
+test_completed_ratings_produce_agreement_and_grouped_metrics (test_annotation_analysis.AnnotationAnalysisTests.test_completed_ratings_produce_agreement_and_grouped_metrics) ... ok
+test_repeated_alerts_collapse_and_sampling_is_deterministic (test_archetypes.ArchetypeTests.test_repeated_alerts_collapse_and_sampling_is_deterministic) ... ok
+test_failed_child_is_not_reported_as_success (test_benchmark.BenchmarkTests.test_failed_child_is_not_reported_as_success) ... ok
+test_invalid_repeat_count_is_rejected (test_benchmark.BenchmarkTests.test_invalid_repeat_count_is_rejected) ... ok
+test_bundled_eve_end_to_end_and_ground_truth (test_cli.CliTests.test_bundled_eve_end_to_end_and_ground_truth) ... ok
+test_generated_figure_validation_rejects_empty_and_invalid_files (test_experiment.ControlledExperimentTests.test_generated_figure_validation_rejects_empty_and_invalid_files) ... ok
+test_two_factor_design_and_expected_score_response (test_experiment.ControlledExperimentTests.test_two_factor_design_and_expected_score_response) ... ok
+test_markdown_contains_weights_contributions_and_missing_codes (test_explain.ExplainTests.test_markdown_contains_weights_contributions_and_missing_codes) ... ok
+test_ordinal_distance_uses_category_marginals (test_human_study.HumanPilotTests.test_ordinal_distance_uses_category_marginals) ... ok
+test_pack_blinding_same_items_different_order_and_empty_ratings (test_human_study.HumanPilotTests.test_pack_blinding_same_items_different_order_and_empty_ratings) ... ok
+test_partial_factorial_balance_and_distinct_base_contexts (test_human_study.HumanPilotTests.test_partial_factorial_balance_and_distinct_base_contexts) ... ok
+test_same_three_raters_required (test_human_study.HumanPilotTests.test_same_three_raters_required) ... ok
+test_port_heuristic_handles_response_without_flow_event (test_parser.ParserTests.test_port_heuristic_handles_response_without_flow_event) ... ok
+test_response_alert_is_correlated_to_flow_roles (test_parser.ParserTests.test_response_alert_is_correlated_to_flow_roles) ... ok
+test_exact_and_revision_fallback_are_explicit (test_rule_catalog.RuleCatalogTests.test_exact_and_revision_fallback_are_explicit) ... ok
+test_schema_rejects_invalid_severity (test_rule_catalog.RuleCatalogTests.test_schema_rejects_invalid_severity) ... ok
+test_failure_is_high_evidence_but_low_likelihood (test_scoring.ScoringTests.test_failure_is_high_evidence_but_low_likelihood) ... ok
+test_not_applicable_cve_does_not_reduce_context (test_scoring.ScoringTests.test_not_applicable_cve_does_not_reduce_context) ... ok
+test_payload_marker_overrides_status_only_inference (test_scoring.ScoringTests.test_payload_marker_overrides_status_only_inference) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 4.377s
+
+OK

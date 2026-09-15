@@ -1,0 +1,84 @@
+schema_version: 1
+experiment_id: post_alert_evidence_profiles_v2
+
+# Evidence profiles are crossed with every controlled outcome context. They
+# change only what an analyst can see; they do not create additional network
+# attacks or independent Suricata detections.
+scenarios:
+  - name: observed
+    label: Native evidence
+    description: Keeps the fields supplied by the source EVE alert and the selected outcome context.
+
+  - name: complete
+    label: Complete evidence
+    description: Deterministically supplies Community ID, payload excerpt, and user agent when absent.
+    enrich: true
+
+  - name: no_payload
+    label: No payload
+    description: Complete evidence with the packet or response excerpt removed.
+    enrich: true
+    remove: [payload_printable]
+
+  - name: no_community_id
+    label: No Community ID
+    description: Complete evidence with Community ID removed.
+    enrich: true
+    remove: [community_id]
+
+  - name: no_outcome
+    label: No outcome evidence
+    description: Complete evidence with both HTTP result and response excerpt removed.
+    enrich: true
+    remove: [http_status, payload_printable]
+
+  - name: no_flow_identity
+    label: No flow identity
+    description: Complete evidence with flow, transaction, and Community identifiers removed.
+    enrich: true
+    remove: [flow_id, tx_id, community_id]
+
+  - name: no_http_context
+    label: No HTTP context
+    description: Complete evidence with HTTP fields and the HTTP payload excerpt removed.
+    enrich: true
+    remove: [http_hostname, http_url, http_method, http_status, http_user_agent, payload_printable]
+
+  - name: no_role_resolution
+    label: No role resolution
+    description: Complete evidence with semantic client/server roles withheld while packet endpoints remain.
+    enrich: true
+    remove: [client_ip, client_port, server_ip, server_port, attacker_candidate, victim_candidate]
+    set:
+      alert_direction: unknown
+      role_confidence: unknown
+
+  - name: unknown_metadata
+    label: Unknown SID metadata
+    description: Complete evidence scored with SID metadata deliberately withheld.
+    enrich: true
+    withhold_metadata: true
+
+  - name: minimal_alert
+    label: Minimal alert
+    description: Retains packet endpoints and the Suricata signature but withholds correlated, HTTP, payload, and SID-enrichment evidence.
+    remove:
+      - flow_id
+      - tx_id
+      - community_id
+      - client_ip
+      - client_port
+      - server_ip
+      - server_port
+      - attacker_candidate
+      - victim_candidate
+      - http_hostname
+      - http_url
+      - http_method
+      - http_status
+      - http_user_agent
+      - payload_printable
+    set:
+      alert_direction: unknown
+      role_confidence: unknown
+    withhold_metadata: true

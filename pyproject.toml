@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "actionability-suricata"
+version = "2.2.2"
+description = "Correlate Suricata EVE alerts and compute separate actionability and risk scores"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML==6.0.2"]
+
+[project.optional-dependencies]
+experiment = ["matplotlib==3.10.8"]
+benchmark = ["psutil==7.2.2"]
+
+[project.scripts]
+as-score = "as_engine.cli:main"
+as-validate = "as_engine.validation:main"
+as-experiment = "as_engine.experiment:main"
+as-ait-ads = "as_engine.ait_ads:main"
+as-explain = "as_engine.explain:main"
+as-archetypes = "as_engine.archetypes:main"
+as-annotation-pack = "as_engine.annotation:main"
+as-annotation-analysis = "as_engine.annotation_analysis:main"
+as-human-study = "as_engine.human_study:main"
+as-external-validation = "as_engine.external_validation:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

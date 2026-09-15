@@ -1,0 +1,6 @@
+[+] Parsed alerts: 10
+[+] Malformed EVE lines: 0
+[+] Rule matches: {'exact': 10}
+[+] JSONL output: runs\paper_extension\external_recheck\synthetic10\scores.jsonl
+[+] CSV output: runs\paper_extension\external_recheck\synthetic10\scores.csv
+[+] Summary output: runs\paper_extension\external_recheck\synthetic10\score_summary.json

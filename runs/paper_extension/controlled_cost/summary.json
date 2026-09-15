@@ -1,0 +1,106 @@
+{
+  "module": "as_engine.experiment",
+  "arguments": [
+    "--eve",
+    "logs/suricata/eve.json",
+    "--rules",
+    "rules/rule_metadata.yaml",
+    "--scoring",
+    "config/scoring-v2.yaml",
+    "--profile",
+    "proposed_default",
+    "--output-dir",
+    "runs\\paper_extension\\controlled_cost\\generated",
+    "--no-figures"
+  ],
+  "runs": [
+    {
+      "module_wall_seconds": 1.4977783999999872,
+      "cpu_seconds": 1.296875,
+      "peak_rss_mib": 33.08203125,
+      "process_wall_seconds": 1.6768606999999918,
+      "repetition": 0,
+      "warmup": true
+    },
+    {
+      "module_wall_seconds": 1.067295200000018,
+      "cpu_seconds": 1.046875,
+      "peak_rss_mib": 32.828125,
+      "process_wall_seconds": 2.3733925999999883,
+      "repetition": 1,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.0748969999999929,
+      "cpu_seconds": 1.078125,
+      "peak_rss_mib": 32.8125,
+      "process_wall_seconds": 1.2608339999999885,
+      "repetition": 2,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.1414094000000148,
+      "cpu_seconds": 1.109375,
+      "peak_rss_mib": 32.734375,
+      "process_wall_seconds": 1.3213241999999923,
+      "repetition": 3,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.095590900000019,
+      "cpu_seconds": 1.09375,
+      "peak_rss_mib": 32.79296875,
+      "process_wall_seconds": 1.273946599999988,
+      "repetition": 4,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 1.1348991000000126,
+      "cpu_seconds": 1.125,
+      "peak_rss_mib": 33.00390625,
+      "process_wall_seconds": 1.3006329999999764,
+      "repetition": 5,
+      "warmup": false
+    }
+  ],
+  "repeats": 5,
+  "warmups": 1,
+  "process_wall_seconds": {
+    "median": 1.3006329999999764,
+    "minimum": 1.2608339999999885,
+    "maximum": 2.3733925999999883
+  },
+  "module_wall_seconds": {
+    "median": 1.095590900000019,
+    "minimum": 1.067295200000018,
+    "maximum": 1.1414094000000148
+  },
+  "cpu_seconds": {
+    "median": 1.09375,
+    "minimum": 1.046875,
+    "maximum": 1.125
+  },
+  "peak_rss_mib": {
+    "median": 32.8125,
+    "minimum": 32.734375,
+    "maximum": 33.00390625
+  },
+  "environment": {
+    "platform": "Windows-10-10.0.26100-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16,
+    "physical_cpus": 10,
+    "ram_gib": 15.710365295410156,
+    "psutil": "7.2.2",
+    "measurement": "Fresh subprocess per repetition; one warmup; OS cache not flushed. Wall includes process startup and output I/O; CPU excludes worker bootstrap. Peak RSS is OS high-water mark for the child, including Python runtime. No network download, Suricata detection or parent memory included."
+  },
+  "scope": "Generate 500 controlled presentations, tables, sensitivity calculations and 300-item annotation pack; figures disabled. This is experiment-generation cost, not raw-alert scoring throughput.",
+  "input_sha256": {
+    "logs/suricata/eve.json": "eaa83463b9efc71dd55cfebb5a8b4ec93bfedce4d4eae4ee4c41b7cbbd4b30f3",
+    "config/scoring-v2.yaml": "3025c2603610800e820400ec3cfe32c9297098b9176ae57e7168a3addf474102",
+    "config/controlled_variants.yaml": "f571e295c52266d581088dfb4a58eb3cf80e486630936e2454bc28357f97ae93",
+    "config/context_variants.yaml": "6181d90b2ead6e97be2d7b4aab9b6e2e126ba920e0c31243cd92fb445ad5ffe6",
+    "rules/rule_metadata.yaml": "fc654955b9799d4c8007b38f506d0593ba67d68cf6c1cc8b4c184f40a594a1c8"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "module": "as_engine.ait_ads",
+  "arguments": [
+    "--input",
+    "..\\ait_data\\russellmitchell_wazuh.json",
+    "--scenario",
+    "russellmitchell",
+    "--labels-csv",
+    "..\\ait_labels\\russellmitchell_alerts.txt",
+    "--out-eve",
+    "runs\\paper_extension\\external\\russellmitchell\\eve.json",
+    "--out-summary",
+    "runs\\paper_extension\\external\\russellmitchell\\adapter_summary.json",
+    "--fail-on-malformed"
+  ],
+  "runs": [
+    {
+      "module_wall_seconds": 0.7632177000004958,
+      "cpu_seconds": 0.765625,
+      "peak_rss_mib": 28.40234375,
+      "process_wall_seconds": 0.9530025000003661,
+      "repetition": 0,
+      "warmup": true
+    },
+    {
+      "module_wall_seconds": 0.7438406999999643,
+      "cpu_seconds": 0.71875,
+      "peak_rss_mib": 28.37109375,
+      "process_wall_seconds": 0.9014170000000377,
+      "repetition": 1,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.9037111999996341,
+      "cpu_seconds": 0.859375,
+      "peak_rss_mib": 28.3671875,
+      "process_wall_seconds": 1.0746818000006897,
+      "repetition": 2,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.7514062000000195,
+      "cpu_seconds": 0.75,
+      "peak_rss_mib": 28.26171875,
+      "process_wall_seconds": 0.9316088000005038,
+      "repetition": 3,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.7473838999994769,
+      "cpu_seconds": 0.734375,
+      "peak_rss_mib": 28.3515625,
+      "process_wall_seconds": 0.9107718999994177,
+      "repetition": 4,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.7837657000000036,
+      "cpu_seconds": 0.78125,
+      "peak_rss_mib": 28.25390625,
+      "process_wall_seconds": 0.9527921999997488,
+      "repetition": 5,
+      "warmup": false
+    }
+  ],
+  "repeats": 5,
+  "warmups": 1,
+  "process_wall_seconds": {
+    "median": 0.9316088000005038,
+    "minimum": 0.9014170000000377,
+    "maximum": 1.0746818000006897
+  },
+  "module_wall_seconds": {
+    "median": 0.7514062000000195,
+    "minimum": 0.7438406999999643,
+    "maximum": 0.9037111999996341
+  },
+  "cpu_seconds": {
+    "median": 0.75,
+    "minimum": 0.71875,
+    "maximum": 0.859375
+  },
+  "peak_rss_mib": {
+    "median": 28.3515625,
+    "minimum": 28.25390625,
+    "maximum": 28.37109375
+  }
+}

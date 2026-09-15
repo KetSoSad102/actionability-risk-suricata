@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "input_scores": "runs\\paper_extension\\external_recheck\\shaw\\scores.jsonl",
+  "statistical_unit": "dataset + scenario + label + SID/signature + protocol + direction + outcome class + missing-evidence profile",
+  "raw_alert_count": 16692,
+  "archetype_count": 19,
+  "sample": {
+    "mode": "fraction_0.25",
+    "seed": 2026,
+    "archetype_count": 5,
+    "archetype_fraction": 0.263158,
+    "represented_raw_alerts": 108
+  },
+  "coverage": {
+    "datasets": {
+      "AIT-ADS": 19
+    },
+    "scenarios": {
+      "shaw": 19
+    },
+    "labels": {
+      "cracking": 4,
+      "false_positive": 15
+    },
+    "outcomes": {
+      "unknown": 17,
+      "possibly_successful": 2
+    },
+    "unique_sids": 10,
+    "unique_signatures": 10
+  },
+  "claim_boundary": "Raw alert frequency is descriptive. Statistical comparisons should use archetypes or independent flows/incidents to avoid pseudo-replication."
+}

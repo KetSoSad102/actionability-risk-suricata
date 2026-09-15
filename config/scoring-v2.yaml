@@ -1,0 +1,40 @@
+schema_version: 2
+default_profile: proposed_default
+
+profiles:
+  proposed_default:
+    # Measures whether an analyst has enough context and evidence to act.
+    # Severity is intentionally excluded; it belongs to the separate risk score.
+    actionability:
+      entity_completeness: 0.25
+      attack_context: 0.20
+      outcome_evidence: 0.15
+      investigation_evidence: 0.25
+      recommended_response: 0.15
+    risk:
+      severity_impact: 0.60
+      outcome_likelihood: 0.40
+    actionability_thresholds:
+      medium: 0.50
+      high: 0.75
+    risk_thresholds:
+      medium: 0.45
+      high: 0.75
+
+  equal_weight:
+    actionability:
+      entity_completeness: 0.20
+      attack_context: 0.20
+      outcome_evidence: 0.20
+      investigation_evidence: 0.20
+      recommended_response: 0.20
+    risk:
+      severity_impact: 0.50
+      outcome_likelihood: 0.50
+    actionability_thresholds:
+      medium: 0.50
+      high: 0.75
+
+    risk_thresholds:
+      medium: 0.45
+      high: 0.75

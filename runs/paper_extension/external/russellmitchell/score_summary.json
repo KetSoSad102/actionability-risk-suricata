@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "score_profile": "proposed_default",
+  "alert_count": 9186,
+  "actionability": {
+    "average": 0.402229,
+    "minimum": 0.221711,
+    "maximum": 0.92,
+    "levels": {
+      "medium": 117,
+      "low": 9042,
+      "high": 27
+    }
+  },
+  "risk": {
+    "average": 0.420477,
+    "minimum": 0.34,
+    "maximum": 0.57,
+    "levels": {
+      "medium": 126,
+      "low": 9060
+    }
+  },
+  "outcomes": {
+    "unknown": 9147,
+    "possibly_successful": 3,
+    "failure_evidenced": 36
+  },
+  "rule_matches": {
+    "unknown_sid": 9159,
+    "sid_fallback": 27
+  },
+  "most_common_missing_evidence": [
+    [
+      "investigation.community_id",
+      9186
+    ],
+    [
+      "investigation.payload",
+      9186
+    ],
+    [
+      "context.attack_type",
+      9159
+    ],
+    [
+      "context.cve",
+      9159
+    ],
+    [
+      "context.mitre",
+      9159
+    ],
+    [
+      "context.sid_metadata",
+      9159
+    ],
+    [
+      "response.metadata",
+      9159
+    ],
+    [
+      "outcome.protocol_result",
+      9042
+    ],
+    [
+      "investigation.http_status",
+      212
+    ],
+    [
+      "entity.client_ip",
+      58
+    ]
+  ],
+  "parser": {
+    "total_lines": 9186,
+    "malformed_json": 0,
+    "alert_events": 9186,
+    "non_alert_events": 0,
+    "correlated_alerts": 0,
+    "inferred_role_alerts": 9128,
+    "unresolved_role_alerts": 58
+  },
+  "ruleset_provenance": {
+    "upstream_repository": "https://github.com/Koen1999/ruling-the-unruly",
+    "upstream_commit": "73d86b249635215f0dee05dc38a32d49c8b1810c",
+    "bundled_rule_file": "rules/improved.rules",
+    "bundled_git_blob_sha": "0909784542e7880550ca5e619985b3712f008df3",
+    "license": "Emerging Threats BSD license (SIDs 2000000-2799999)",
+    "note": "All 16 bundled rule lines were verified as an exact subset of improved.rules at upstream_commit."
+  }
+}

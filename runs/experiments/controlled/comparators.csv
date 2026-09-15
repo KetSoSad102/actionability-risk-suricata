@@ -1,0 +1,3 @@
+comparator,kendall_tau_b,top_20_overlap,mean_absolute_delta
+equal_weight,0.91037,1.0,0.01878
+field_presence,0.808418,0.53,0.053116

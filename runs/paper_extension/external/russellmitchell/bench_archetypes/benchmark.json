@@ -1,0 +1,85 @@
+{
+  "module": "as_engine.archetypes",
+  "arguments": [
+    "--scores",
+    "runs\\paper_extension\\external\\russellmitchell\\scores.jsonl",
+    "--output-dir",
+    "runs\\paper_extension\\external\\russellmitchell\\archetypes",
+    "--sample-fraction",
+    "0.25",
+    "--seed",
+    "2026"
+  ],
+  "runs": [
+    {
+      "module_wall_seconds": 0.3455429000005097,
+      "cpu_seconds": 0.3125,
+      "peak_rss_mib": 24.5625,
+      "process_wall_seconds": 0.4873365000003105,
+      "repetition": 0,
+      "warmup": true
+    },
+    {
+      "module_wall_seconds": 0.3031455999998798,
+      "cpu_seconds": 0.265625,
+      "peak_rss_mib": 24.28515625,
+      "process_wall_seconds": 0.4505915999998251,
+      "repetition": 1,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.30926519999957236,
+      "cpu_seconds": 0.296875,
+      "peak_rss_mib": 24.21875,
+      "process_wall_seconds": 0.44994800000040414,
+      "repetition": 2,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.3132597000003443,
+      "cpu_seconds": 0.3125,
+      "peak_rss_mib": 24.296875,
+      "process_wall_seconds": 0.4578951999992569,
+      "repetition": 3,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.3236901999998736,
+      "cpu_seconds": 0.328125,
+      "peak_rss_mib": 24.234375,
+      "process_wall_seconds": 0.48719809999965946,
+      "repetition": 4,
+      "warmup": false
+    },
+    {
+      "module_wall_seconds": 0.28853090000029624,
+      "cpu_seconds": 0.296875,
+      "peak_rss_mib": 24.2421875,
+      "process_wall_seconds": 0.4747674999998708,
+      "repetition": 5,
+      "warmup": false
+    }
+  ],
+  "repeats": 5,
+  "warmups": 1,
+  "process_wall_seconds": {
+    "median": 0.4578951999992569,
+    "minimum": 0.44994800000040414,
+    "maximum": 0.48719809999965946
+  },
+  "module_wall_seconds": {
+    "median": 0.30926519999957236,
+    "minimum": 0.28853090000029624,
+    "maximum": 0.3236901999998736
+  },
+  "cpu_seconds": {
+    "median": 0.296875,
+    "minimum": 0.265625,
+    "maximum": 0.328125
+  },
+  "peak_rss_mib": {
+    "median": 24.2421875,
+    "minimum": 24.21875,
+    "maximum": 24.296875
+  }
+}

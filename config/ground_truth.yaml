@@ -1,0 +1,74 @@
+schema_version: 1
+allow_unexpected_sids: false
+
+expected_alerts:
+  - sid: 2012726
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_server"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2016185
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_client"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2024897
+    count: 1
+    attacker_candidate: "10.0.0.10"
+    victim_candidate: "203.0.113.20"
+    alert_direction: "to_server"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2025756
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_server"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2009359
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_client"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2017809
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_client"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2024364
+    count: 1
+    attacker_candidate: "10.0.0.10"
+    victim_candidate: "203.0.113.20"
+    alert_direction: "to_server"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2006447
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_client"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2006448
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_client"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"
+  - sid: 2009715
+    count: 1
+    attacker_candidate: "203.0.113.10"
+    victim_candidate: "10.0.0.20"
+    alert_direction: "to_client"
+    outcome_class: "possibly_successful"
+    rule_match_quality: "exact"

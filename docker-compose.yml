@@ -1,0 +1,56 @@
+services:
+  pcap-gen:
+    build:
+      context: .
+      dockerfile: Dockerfile.pcap
+    container_name: aslab-pcap-gen
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    environment:
+      HOME: /tmp
+    volumes:
+      - ./pcaps:/app/pcaps
+      - ./payloads:/app/payloads:ro
+    working_dir: /app
+
+  suricata-offline:
+    image: jasonish/suricata:7.0
+    container_name: aslab-suricata-offline
+    environment:
+      PUID: "${LOCAL_UID:-1000}"
+      PGID: "${LOCAL_GID:-1000}"
+    volumes:
+      - ./pcaps:/pcaps:ro
+      - ./rules:/rules:ro
+      - ./logs/suricata:/logs
+    command: ["-r", "/pcaps/generated_official_payloads.pcap", "-S", "/rules/improved.rules", "-l", "/logs", "-k", "none"]
+
+  as-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile.as
+    container_name: aslab-as-engine
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    environment:
+      HOME: /tmp
+    volumes:
+      - ./logs/suricata:/logs/suricata:ro
+      - ./rules:/app/rules:ro
+      - ./config:/app/config:ro
+      - ./runs:/app/runs
+    working_dir: /app
+
+  experiment:
+    build:
+      context: .
+      dockerfile: Dockerfile.experiment
+    container_name: aslab-experiment
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    environment:
+      HOME: /tmp
+      MPLCONFIGDIR: /tmp/matplotlib
+    volumes:
+      - ./logs/suricata:/logs/suricata:ro
+      - ./rules:/app/rules:ro
+      - ./config:/app/config:ro
+      - ./runs:/app/runs
+    working_dir: /app

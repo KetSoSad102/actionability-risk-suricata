@@ -1,0 +1,6 @@
+[+] Parsed alerts: 16692
+[+] Malformed EVE lines: 0
+[+] Rule matches: {'unknown_sid': 16692}
+[+] JSONL output: runs\paper_extension\external_recheck\shaw\scores.jsonl
+[+] CSV output: runs\paper_extension\external_recheck\shaw\scores.csv
+[+] Summary output: runs\paper_extension\external_recheck\shaw\score_summary.json

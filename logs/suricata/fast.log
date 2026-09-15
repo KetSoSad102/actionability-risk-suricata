@@ -1,0 +1,10 @@
+07/31/2026-16:41:21.120548  [**] [1:2012726:7] ET SCAN OpenVASVT RCE Test String in HTTP Request Inbound [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 203.0.113.10:41001 -> 10.0.0.20:80
+07/31/2026-16:41:21.123446  [**] [1:2025756:3] ET EXPLOIT D-Link DSL-2750B - Inbound OS Command Injection [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 203.0.113.10:41003 -> 10.0.0.20:80
+07/31/2026-16:41:21.132098  [**] [1:2024364:6] ET SCAN Nmap User-Agent Observed (Internal) [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 10.0.0.10:42002 -> 203.0.113.20:80
+07/31/2026-16:41:21.130797  [**] [1:2024897:3] ET USER_AGENTS Go HTTP Client User-Agent [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.0.0.10:42001 -> 203.0.113.20:80
+07/31/2026-16:41:21.120548  [**] [1:2017809:4] ET SCAN 200 OK to SQLI Information Schema Access Attempt [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 10.0.0.20:80 -> 203.0.113.10:41005
+07/31/2026-16:41:21.120548  [**] [1:2006448:4] ET SCAN 200 OK to SQLI UNION Attempt [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 10.0.0.20:80 -> 203.0.113.10:41007
+07/31/2026-16:41:21.120548  [**] [1:2009715:4] ET WEB_SERVER 200 OK to XSS Attempt [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 10.0.0.20:80 -> 203.0.113.10:41008
+07/31/2026-16:41:21.120548  [**] [1:2009359:4] ET SCAN 200 OK to NMAP NSE UA request [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 10.0.0.20:80 -> 203.0.113.10:41004
+07/31/2026-16:41:21.120548  [**] [1:2016185:0] ET WEB_SERVER ColdFusion successful administrator access [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 10.0.0.20:80 -> 203.0.113.10:41002
+07/31/2026-16:41:21.120548  [**] [1:2006447:4] ET SCAN 200 OK to SQLI SELECT Attempt [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 10.0.0.20:80 -> 203.0.113.10:41006

@@ -1,0 +1,37 @@
+schema_version: 1
+context_set_id: post_alert_outcomes_v1
+
+# These deterministic vignettes alter only post-alert outcome evidence. They
+# are not claimed as independent attacks or as newly observed Suricata alerts.
+contexts:
+  - name: observed
+    label: Observed HTTP 200
+    description: Retains the HTTP result found in the bundled EVE alert.
+
+  - name: success_marker_200
+    label: HTTP 200 with success marker
+    description: Adds an explicit configured success marker to a successful HTTP response.
+    set:
+      http_status: 200
+      payload_printable: "HTTP/1.1 200 OK\\r\\nContent-Type: text/plain\\r\\n\\r\\nCONTROLLED_SUCCESS_MARKER"
+
+  - name: failure_marker_200
+    label: HTTP 200 with failure marker
+    description: Adds an explicit failure marker, demonstrating that a 200 status alone is inconclusive.
+    set:
+      http_status: 200
+      payload_printable: "HTTP/1.1 200 OK\\r\\nContent-Type: text/plain\\r\\n\\r\\nCONTROLLED_FAILURE_MARKER"
+
+  - name: rejected_403
+    label: Rejected HTTP 403
+    description: Represents a request rejected by the target application.
+    set:
+      http_status: 403
+      payload_printable: "HTTP/1.1 403 Forbidden\\r\\n\\r\\nCONTROLLED_FAILURE_MARKER"
+
+  - name: ambiguous_302
+    label: Ambiguous HTTP 302
+    description: Represents an available but inconclusive redirect outcome.
+    set:
+      http_status: 302
+      payload_printable: "HTTP/1.1 302 Found\\r\\nLocation: /login\\r\\n\\r\\n"

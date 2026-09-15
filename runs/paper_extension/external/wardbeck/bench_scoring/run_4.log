@@ -1,0 +1,6 @@
+[+] Parsed alerts: 24510
+[+] Malformed EVE lines: 0
+[+] Rule matches: {'unknown_sid': 24501, 'sid_fallback': 9}
+[+] JSONL output: runs\paper_extension\external\wardbeck\scores.jsonl
+[+] CSV output: runs\paper_extension\external\wardbeck\scores.csv
+[+] Summary output: runs\paper_extension\external\wardbeck\score_summary.json

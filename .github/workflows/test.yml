@@ -1,0 +1,41 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-benchmark.txt
+      - name: Compile modules
+        run: python -m compileall -q src tests
+      - name: Run unit and regression tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v
+      - name: Score bundled EVE fixture
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m as_engine.cli \
+            --eve logs/suricata/eve.json \
+            --rules rules/rule_metadata.yaml \
+            --scoring config/scoring-v2.yaml \
+            --out-jsonl /tmp/scores.jsonl \
+            --out-csv /tmp/scores.csv \
+            --out-summary /tmp/summary.json \
+            --fail-on-malformed
+          python -m as_engine.validation \
+            --scores /tmp/scores.csv \
+            --truth config/ground_truth.yaml

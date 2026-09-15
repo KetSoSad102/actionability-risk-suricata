@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "input_scores": "runs\\paper_extension\\external\\russellmitchell\\scores.jsonl",
+  "statistical_unit": "dataset + scenario + label + SID/signature + protocol + direction + outcome class + missing-evidence profile",
+  "raw_alert_count": 9186,
+  "archetype_count": 31,
+  "sample": {
+    "mode": "fraction_0.25",
+    "seed": 2026,
+    "archetype_count": 8,
+    "archetype_fraction": 0.258065,
+    "represented_raw_alerts": 185
+  },
+  "coverage": {
+    "datasets": {
+      "AIT-ADS": 31
+    },
+    "scenarios": {
+      "russellmitchell": 31
+    },
+    "labels": {
+      "cracking": 1,
+      "dnsteal": 4,
+      "false_positive": 13,
+      "service_scan": 9,
+      "webshell": 2,
+      "wpscan": 2
+    },
+    "outcomes": {
+      "unknown": 27,
+      "possibly_successful": 2,
+      "failure_evidenced": 2
+    },
+    "unique_sids": 13,
+    "unique_signatures": 13
+  },
+  "claim_boundary": "Raw alert frequency is descriptive. Statistical comparisons should use archetypes or independent flows/incidents to avoid pseudo-replication."
+}

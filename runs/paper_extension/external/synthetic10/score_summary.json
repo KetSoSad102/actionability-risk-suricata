@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "score_profile": "proposed_default",
+  "alert_count": 10,
+  "actionability": {
+    "average": 0.86,
+    "minimum": 0.86,
+    "maximum": 0.86,
+    "levels": {
+      "high": 10
+    }
+  },
+  "risk": {
+    "average": 0.645,
+    "minimum": 0.54,
+    "maximum": 0.69,
+    "levels": {
+      "medium": 10
+    }
+  },
+  "outcomes": {
+    "possibly_successful": 10
+  },
+  "rule_matches": {
+    "exact": 10
+  },
+  "most_common_missing_evidence": [
+    [
+      "investigation.community_id",
+      10
+    ],
+    [
+      "investigation.payload",
+      10
+    ]
+  ],
+  "parser": {
+    "total_lines": 41,
+    "malformed_json": 0,
+    "alert_events": 10,
+    "non_alert_events": 31,
+    "correlated_alerts": 10,
+    "inferred_role_alerts": 0,
+    "unresolved_role_alerts": 0
+  },
+  "ruleset_provenance": {
+    "upstream_repository": "https://github.com/Koen1999/ruling-the-unruly",
+    "upstream_commit": "73d86b249635215f0dee05dc38a32d49c8b1810c",
+    "bundled_rule_file": "rules/improved.rules",
+    "bundled_git_blob_sha": "0909784542e7880550ca5e619985b3712f008df3",
+    "license": "Emerging Threats BSD license (SIDs 2000000-2799999)",
+    "note": "All 16 bundled rule lines were verified as an exact subset of improved.rules at upstream_commit."
+  }
+}

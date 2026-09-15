@@ -1,0 +1,279 @@
+{
+  "created_utc": "2026-09-14T16:43:49.869965+00:00",
+  "environment": {
+    "platform": "Windows-10-10.0.26100-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16,
+    "physical_cpus": 10,
+    "ram_gib": 15.710365295410156,
+    "psutil": "7.2.2",
+    "measurement": "Fresh subprocess per repetition; one warmup; OS cache not flushed. Wall includes process startup and output I/O; CPU excludes worker bootstrap. Peak RSS is OS high-water mark for the child, including Python runtime. No network download, Suricata detection or parent memory included."
+  },
+  "base_commit": "0bda92a883374d62de27be3599a4739d1a61b5a0",
+  "configuration_sha256": {
+    "config/scoring-v2.yaml": "3025c2603610800e820400ec3cfe32c9297098b9176ae57e7168a3addf474102",
+    "rules/rule_metadata.yaml": "fc654955b9799d4c8007b38f506d0593ba67d68cf6c1cc8b4c184f40a594a1c8"
+  },
+  "source_sha256": {
+    "src\\as_engine\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\as_engine\\ait_ads.py": "28bbd818f1dcb9e5111e2a6261639ef24b19d7fdd9f313974523f291bc127c31",
+    "src\\as_engine\\annotation.py": "a40ee1377bbb0532ef429a45261825d809c72d53639cab103b75859a6efa3188",
+    "src\\as_engine\\annotation_analysis.py": "f84d2d4721e0fcddd4da402af87c1604d48776bd0163f124f34a1d7d3e16552c",
+    "src\\as_engine\\archetypes.py": "16e0140c6325a62eda0a0aedf8021ef7228a6211db9964f14c95bda6894ea815",
+    "src\\as_engine\\benchmark.py": "3a0d9a9e289f656ddda3a4583605bc1e242293f6c65ef6056d40ada3d0d25fa4",
+    "src\\as_engine\\cli.py": "d973af826b96a5c0a9207778e9c6b3585a7f38450fa7014b423aa2e2d4042649",
+    "src\\as_engine\\evidence.py": "ccac028f6f887e56b440807022186f5f31536fb0e56580dbee975d664223ba9e",
+    "src\\as_engine\\experiment.py": "9faf29ab540d07113ebfb916efc08626cfe7e54cf3e555742bb27bb7b9574d3c",
+    "src\\as_engine\\explain.py": "a113f6c9f17c926b48881ea03acb87cf150f7e6fbe36ff026914a2f9e939065f",
+    "src\\as_engine\\external_validation.py": "dfa5e0f745057a7687a9fdbafa16f701ce0665b729fce28a69002559a759862f",
+    "src\\as_engine\\human_study.py": "620945db98954555a94a5b9c1af5e427f60373580b1cc2a31c5aafdbc899dc12",
+    "src\\as_engine\\parser.py": "925651bd4542974fb4d6a03e658a839909c1f2a628d7b1b5b04438ae42b61904",
+    "src\\as_engine\\rule_catalog.py": "fe12c685aee768c79f78fbbbc7a4633965482bc16107ba64f41505929fe2622b",
+    "src\\as_engine\\scoring.py": "0881a8eed53b529baede213e556a8a3d8512f103548abf6e943a28e8ef1a1e89",
+    "src\\as_engine\\validation.py": "23845ce4ae940484e698f1d5695b815d6029c585fcacba7bead11d894520ba36"
+  },
+  "scenarios": [
+    "russellmitchell",
+    "shaw",
+    "wardbeck",
+    "santos"
+  ],
+  "inputs": {
+    "russellmitchell": {
+      "data_sha256": "da4b882de7df765d4fbedd772a5bf892e7a440580d3654c585d6d124bfb94832",
+      "data_bytes": 45282051,
+      "labels_sha256": "633fd686667a166a56355bc5d6d902ccf81a74f5ef557793b1fcd9a9edacee19"
+    },
+    "shaw": {
+      "data_sha256": "45e34b65ce08c6a49b0ba52a4f36dbe5829d26240a2acccf8b3842201b6afca8",
+      "data_bytes": 74755213,
+      "labels_sha256": "7e8f68ee56b79a0174cd56afbb2c474443693ea2430516d7c0b745ba534f94ea"
+    },
+    "wardbeck": {
+      "data_sha256": "b4e483c67e4de2a20b1b559692981e912fb83f1d1831b6e1f7e5760b16fe7117",
+      "data_bytes": 96564119,
+      "labels_sha256": "e2413b345215627d2e053bfe78b04c96109f051a317c6d1fcd981720dcfd500d"
+    },
+    "santos": {
+      "data_sha256": "df298d52ab555a75b1e6a60e80aae973e845d85ba9875d001bd2f5f4f3b5097b",
+      "data_bytes": 145438925,
+      "labels_sha256": "cce927fee9ae3109c68d7b2e72e4c8b8c2ee8594adb1da81b91dc08bcb139f4d"
+    }
+  },
+  "results": [
+    {
+      "scenario": "russellmitchell",
+      "raw_alerts": 9186,
+      "archetypes": 31,
+      "archetype_mean_actionability": 0.370868064516129,
+      "archetype_median_actionability": 0.3625,
+      "archetype_min": 0.221711,
+      "archetype_max": 0.92,
+      "role_resolved": 9128,
+      "http_context": 356,
+      "decisive_outcome": 36,
+      "sid_metadata": 27,
+      "unlabeled": 0,
+      "attack_phase": 213,
+      "role_resolved_fraction": 0.9936860439799695,
+      "http_context_fraction": 0.038754626605704334,
+      "decisive_outcome_fraction": 0.003919007184846506,
+      "sid_metadata_fraction": 0.002939255388634879,
+      "unlabeled_fraction": 0.0,
+      "attack_phase_fraction": 0.023187459177008492,
+      "adapter_wall_seconds": 0.9316088000005038,
+      "adapter_peak_rss_mib": 28.3515625,
+      "scoring_wall_seconds": 3.046573399999943,
+      "scoring_peak_rss_mib": 25.71875,
+      "archetypes_wall_seconds": 0.4578951999992569,
+      "archetypes_peak_rss_mib": 24.2421875,
+      "scoring_alerts_per_second": 3015.1907713761866
+    },
+    {
+      "scenario": "shaw",
+      "raw_alerts": 16692,
+      "archetypes": 19,
+      "archetype_mean_actionability": 0.3749423157894737,
+      "archetype_median_actionability": 0.398182,
+      "archetype_min": 0.221711,
+      "archetype_max": 0.59,
+      "role_resolved": 16548,
+      "http_context": 520,
+      "decisive_outcome": 0,
+      "sid_metadata": 0,
+      "unlabeled": 0,
+      "attack_phase": 204,
+      "role_resolved_fraction": 0.99137311286844,
+      "http_context_fraction": 0.03115264797507788,
+      "decisive_outcome_fraction": 0.0,
+      "sid_metadata_fraction": 0.0,
+      "unlabeled_fraction": 0.0,
+      "attack_phase_fraction": 0.012221423436376708,
+      "adapter_wall_seconds": 1.2748909000001731,
+      "adapter_peak_rss_mib": 31.984375,
+      "scoring_wall_seconds": 5.252536199999668,
+      "scoring_peak_rss_mib": 25.8828125,
+      "archetypes_wall_seconds": 0.6617891999994754,
+      "archetypes_peak_rss_mib": 23.96875,
+      "scoring_alerts_per_second": 3177.8933765370443
+    },
+    {
+      "scenario": "wardbeck",
+      "raw_alerts": 24510,
+      "archetypes": 42,
+      "archetype_mean_actionability": 0.3593346904761905,
+      "archetype_median_actionability": 0.398182,
+      "archetype_min": 0.221711,
+      "archetype_max": 0.92,
+      "role_resolved": 24361,
+      "http_context": 468,
+      "decisive_outcome": 8,
+      "sid_metadata": 9,
+      "unlabeled": 0,
+      "attack_phase": 207,
+      "role_resolved_fraction": 0.993920848633211,
+      "http_context_fraction": 0.01909424724602203,
+      "decisive_outcome_fraction": 0.0003263973888208894,
+      "sid_metadata_fraction": 0.0003671970624235006,
+      "unlabeled_fraction": 0.0,
+      "attack_phase_fraction": 0.008445532435740514,
+      "adapter_wall_seconds": 1.661536800000249,
+      "adapter_peak_rss_mib": 33.828125,
+      "scoring_wall_seconds": 7.864459899999929,
+      "scoring_peak_rss_mib": 25.8671875,
+      "archetypes_wall_seconds": 0.9158780999996452,
+      "archetypes_peak_rss_mib": 24.53515625,
+      "scoring_alerts_per_second": 3116.5522250294925
+    },
+    {
+      "scenario": "santos",
+      "raw_alerts": 44112,
+      "archetypes": 58,
+      "archetype_mean_actionability": 0.3677238103448276,
+      "archetype_median_actionability": 0.398182,
+      "archetype_min": 0.181711,
+      "archetype_max": 0.92,
+      "role_resolved": 18254,
+      "http_context": 388,
+      "decisive_outcome": 12,
+      "sid_metadata": 15,
+      "unlabeled": 0,
+      "attack_phase": 26122,
+      "role_resolved_fraction": 0.41381030105186795,
+      "http_context_fraction": 0.008795792528110264,
+      "decisive_outcome_fraction": 0.0002720348204570185,
+      "sid_metadata_fraction": 0.00034004352557127313,
+      "unlabeled_fraction": 0.0,
+      "attack_phase_fraction": 0.5921744649981865,
+      "adapter_wall_seconds": 2.5148644999999306,
+      "adapter_peak_rss_mib": 48.9296875,
+      "scoring_wall_seconds": 57.644214300000385,
+      "scoring_peak_rss_mib": 25.95703125,
+      "archetypes_wall_seconds": 8.416323899999952,
+      "archetypes_peak_rss_mib": 25.15625,
+      "scoring_alerts_per_second": 765.2459233883548
+    }
+  ],
+  "selection": "Three smallest remaining Wazuh exports by uncompressed bytes, selected before scoring; russellmitchell retained as reference.",
+  "interpretation": "Descriptive cross-scenario evidence coverage; archetypes are aggregation units, not proven independent incidents. No maliciousness classifier or human validity claim.",
+  "synthetic10": {
+    "module": "as_engine.cli",
+    "arguments": [
+      "--eve",
+      "logs\\suricata\\eve.json",
+      "--rules",
+      "rules/rule_metadata.yaml",
+      "--scoring",
+      "config/scoring-v2.yaml",
+      "--profile",
+      "proposed_default",
+      "--out-jsonl",
+      "runs\\paper_extension\\external\\synthetic10\\scores.jsonl",
+      "--out-csv",
+      "runs\\paper_extension\\external\\synthetic10\\scores.csv",
+      "--out-summary",
+      "runs\\paper_extension\\external\\synthetic10\\score_summary.json",
+      "--fail-on-malformed"
+    ],
+    "runs": [
+      {
+        "module_wall_seconds": 0.7223740999997972,
+        "cpu_seconds": 0.53125,
+        "peak_rss_mib": 25.3125,
+        "process_wall_seconds": 1.4022354999997333,
+        "repetition": 0,
+        "warmup": true
+      },
+      {
+        "module_wall_seconds": 0.6950662999997803,
+        "cpu_seconds": 0.53125,
+        "peak_rss_mib": 25.38671875,
+        "process_wall_seconds": 1.512930900000356,
+        "repetition": 1,
+        "warmup": false
+      },
+      {
+        "module_wall_seconds": 0.19876810000005207,
+        "cpu_seconds": 0.171875,
+        "peak_rss_mib": 25.453125,
+        "process_wall_seconds": 1.1516434000004665,
+        "repetition": 2,
+        "warmup": false
+      },
+      {
+        "module_wall_seconds": 0.6487302000005002,
+        "cpu_seconds": 0.53125,
+        "peak_rss_mib": 25.31640625,
+        "process_wall_seconds": 1.3870713000005708,
+        "repetition": 3,
+        "warmup": false
+      },
+      {
+        "module_wall_seconds": 0.18228069999986474,
+        "cpu_seconds": 0.171875,
+        "peak_rss_mib": 25.37109375,
+        "process_wall_seconds": 0.8902661000001899,
+        "repetition": 4,
+        "warmup": false
+      },
+      {
+        "module_wall_seconds": 0.3623987000000852,
+        "cpu_seconds": 0.328125,
+        "peak_rss_mib": 25.46875,
+        "process_wall_seconds": 0.9442540999998528,
+        "repetition": 5,
+        "warmup": false
+      }
+    ],
+    "repeats": 5,
+    "warmups": 1,
+    "process_wall_seconds": {
+      "median": 1.1516434000004665,
+      "minimum": 0.8902661000001899,
+      "maximum": 1.512930900000356
+    },
+    "module_wall_seconds": {
+      "median": 0.3623987000000852,
+      "minimum": 0.18228069999986474,
+      "maximum": 0.6950662999997803
+    },
+    "cpu_seconds": {
+      "median": 0.328125,
+      "minimum": 0.171875,
+      "maximum": 0.53125
+    },
+    "peak_rss_mib": {
+      "median": 25.38671875,
+      "minimum": 25.31640625,
+      "maximum": 25.46875
+    }
+  },
+  "synthetic10_input_sha256": "eaa83463b9efc71dd55cfebb5a8b4ec93bfedce4d4eae4ee4c41b7cbbd4b30f3",
+  "leave_one_scenario_out_macro_means": {
+    "russellmitchell": 0.3673336055368306,
+    "shaw": 0.365975521779049,
+    "wardbeck": 0.37117806355014343,
+    "santos": 0.36838169026059775
+  }
+}

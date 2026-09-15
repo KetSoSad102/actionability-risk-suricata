@@ -1,0 +1,44 @@
+{
+  "configuration_unchanged_from_upstream": true,
+  "scenario_outputs": {
+    "russellmitchell": {
+      "identical_score_sha256": "4f0f48a3039f48d8d22bbcde1102f1f2719d72784a74016fd79a2bffe46a3476",
+      "alerts": 9186,
+      "malformed": 0
+    },
+    "shaw": {
+      "identical_score_sha256": "0199d8ab5c097b40d779b02b6ea346d6c9e561e190c472dbf51919f3c96b865d",
+      "alerts": 16692,
+      "malformed": 0
+    },
+    "wardbeck": {
+      "identical_score_sha256": "5cce8033525faec0bbb5b6e5d926590812e46c19f93a8fa0daa5c59c8191ea2c",
+      "alerts": 24510,
+      "malformed": 0
+    },
+    "santos": {
+      "identical_score_sha256": "1badf544e7e7bc66ba2adf6a0a969fb39fe71f1b5f6c0d3356d005fc626c74a9",
+      "alerts": 44112,
+      "malformed": 0
+    }
+  },
+  "delivered_source_sha256": {
+    "src\\as_engine\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\as_engine\\ait_ads.py": "28bbd818f1dcb9e5111e2a6261639ef24b19d7fdd9f313974523f291bc127c31",
+    "src\\as_engine\\annotation.py": "21ed3a38494522b6720efc22f8686e0d657b113ee304a1f821afa62ec7959878",
+    "src\\as_engine\\annotation_analysis.py": "7c7e48c21110693461ac55542ea90e915af2c802f4e328fc93c999a68efae851",
+    "src\\as_engine\\archetypes.py": "16e0140c6325a62eda0a0aedf8021ef7228a6211db9964f14c95bda6894ea815",
+    "src\\as_engine\\benchmark.py": "0ce1066d6bc1fdf8d498ba6925bc22b252cdf59aea219c457491321eb057b270",
+    "src\\as_engine\\cli.py": "d973af826b96a5c0a9207778e9c6b3585a7f38450fa7014b423aa2e2d4042649",
+    "src\\as_engine\\evidence.py": "ccac028f6f887e56b440807022186f5f31536fb0e56580dbee975d664223ba9e",
+    "src\\as_engine\\experiment.py": "9faf29ab540d07113ebfb916efc08626cfe7e54cf3e555742bb27bb7b9574d3c",
+    "src\\as_engine\\explain.py": "a113f6c9f17c926b48881ea03acb87cf150f7e6fbe36ff026914a2f9e939065f",
+    "src\\as_engine\\external_validation.py": "96bb7de998e8b9370ea45ec558e5b71644efc15b939ee20f7c1d689e517a4730",
+    "src\\as_engine\\human_study.py": "c1d27f50fd6ad28c40bd6801b9050f36ba1b6c1b768bfcfd473317ff3c0f51a6",
+    "src\\as_engine\\parser.py": "925651bd4542974fb4d6a03e658a839909c1f2a628d7b1b5b04438ae42b61904",
+    "src\\as_engine\\rule_catalog.py": "fe12c685aee768c79f78fbbbc7a4633965482bc16107ba64f41505929fe2622b",
+    "src\\as_engine\\scoring.py": "0881a8eed53b529baede213e556a8a3d8512f103548abf6e943a28e8ef1a1e89",
+    "src\\as_engine\\validation.py": "23845ce4ae940484e698f1d5695b815d6029c585fcacba7bead11d894520ba36"
+  },
+  "measurement_source_note": "Original manifest retains source snapshot from each benchmark launch. Subsequent edits concern the human-study tools, reporting, and scenario-selection wording and allowing a benchmark worker with zero module arguments. Scoring, adaptation, archetype algorithms and the measurement implementation for these nonempty-argument runs are unchanged."
+}

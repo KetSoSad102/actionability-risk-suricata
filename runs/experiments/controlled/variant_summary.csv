@@ -1,0 +1,11 @@
+scenario,label,case_count,actionability_mean,actionability_std,actionability_min,actionability_max,risk_mean,field_presence_mean,mean_entity_completeness,mean_attack_context,mean_outcome_evidence,mean_investigation_evidence,mean_recommended_response
+observed,Native evidence,50,0.93,0.049396,0.86,0.97,0.573,0.942571,1.0,1.0,0.8,0.84,1.0
+complete,Complete evidence,50,0.97,0.037947,0.91,1.0,0.573,1.0,1.0,1.0,0.8,1.0,1.0
+no_payload,No payload,50,0.896,0.029394,0.86,0.95,0.589,0.952143,1.0,1.0,0.64,0.8,1.0
+no_community_id,No Community ID,50,0.94,0.037947,0.88,0.97,0.573,0.952143,1.0,1.0,0.8,0.88,1.0
+no_outcome,No outcome evidence,50,0.77,0.0,0.77,0.77,0.525,0.904286,1.0,1.0,0.0,0.68,1.0
+no_flow_identity,No flow identity,50,0.8725,0.037947,0.8125,0.9025,0.573,0.904286,0.85,1.0,0.8,0.76,1.0
+no_http_context,No HTTP context,50,0.6225,0.0,0.6225,0.6225,0.525,0.712857,0.85,1.0,0.0,0.24,1.0
+no_role_resolution,No role resolution,50,0.82,0.037947,0.76,0.85,0.573,0.808572,0.4,1.0,0.8,1.0,1.0
+unknown_metadata,Unknown SID metadata,50,0.676,0.029394,0.64,0.73,0.739,0.714286,1.0,0.4,0.64,1.0,0.0
+minimal_alert,Minimal alert,50,0.105,0.0,0.105,0.105,0.675,0.142857,0.1,0.4,0.0,0.0,0.0

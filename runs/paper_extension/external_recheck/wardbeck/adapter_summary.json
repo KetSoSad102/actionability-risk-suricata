@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "adapter": "ait_ads_wazuh_to_eve",
+  "scenario": "wardbeck",
+  "input": "..\\ait_data\\wardbeck_wazuh.json",
+  "output": "runs\\paper_extension\\external_recheck\\wardbeck\\eve.json",
+  "labels_csv": "..\\ait_labels\\wardbeck_alerts.txt",
+  "diagnostics": {
+    "total_records": 88204,
+    "malformed_json": 0,
+    "suricata_records": 24510,
+    "non_suricata_records": 63694,
+    "missing_sid": 0
+  },
+  "limitations": [
+    "AIT-ADS Wazuh exports may omit raw EVE flow_id, tx_id, HTTP outcome, and payload fields.",
+    "The adapter preserves missing evidence and does not infer attack ground truth.",
+    "Time-phase labels were joined by whole-second timestamp and normalized signature."
+  ]
+}
